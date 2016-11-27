@@ -42,7 +42,15 @@ footer {
 	text-decoration: underline;
 }
 
-.libelle {
+.bold {
+	text-decoration: bold;
+}
+
+.italic {
+	text-decoration: italic;
+}
+
+label.libelle {
 	text-decoration: bold;
 	padding-right: 5px;
 }
@@ -53,12 +61,28 @@ footer {
 	margin-left: 10px;
 }
 
+.wd100px {
+	width: 100px;
+}
+
 .wd150px {
 	width: 150px;
 }
 
 .wd200px {
 	width: 200px;
+}
+
+.wd10pc {
+	width: 10%;
+}
+
+.wd50pc {
+	width: 50%;
+}
+
+.wd100pc {
+	width: 100%;
 }
 
 /* image */
