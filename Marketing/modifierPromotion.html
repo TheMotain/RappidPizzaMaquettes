@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Modifier une promotion</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../css/3-col-portfolio.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <a class="navbar-brand" href="../index.html">RapidePizza</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">Catalogue</a>
+                    </li>
+                    <li>
+                        <a href="#">Promotions</a>
+                    </li>
+					<li>
+						<a href="listePromotions-Tout.html">Gestion des promotions</a>
+					</li>
+                </ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#"><span class="glyphicon glyphicon-user"></span> Céline</a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Déconnection</a></li>
+				</ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Page Header -->
+        <div class="row page-header">
+            <div class="col-lg-12 text-center">
+                <h1>Modifier promotion</h1>
+			</div>
+        </div>
+        <!-- /.row -->
+
+		<div class="row">
+			<div class="col-lg-7">
+				<div class="row">
+					<div class="col-sm-2 wd200px">
+						<label class="libelle">Titre *:</label>
+					</div>
+					<div class="col-sm-1">
+						<input type="text" value="2 + 1"></input>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2 wd200px">
+						<label class="libelle">Description *:</label>
+					</div>
+					<div class="col-sm-1">
+						<textarea rows="5" cols="30">Deux pizzas achetées une gratuite</textarea>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2 wd200px">
+						<label class="libelle">Date début *:</label>
+					</div>
+					<div class="col-sm-3">
+						<input type="date" value="2016-01-01"></input><button type="button"><span class="glyphicon glyphicon-calendar"/></button>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2 wd200px">
+						<label class="libelle">Date fin :</label>
+					</div>
+					<div class="col-sm-3">
+						<input type="date" value="2017-01-01"></input><button type="button"><span class="glyphicon glyphicon-calendar"/></button>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2 wd200px">
+						<label class="libelle">Périodicité :</label>
+					</div>
+					<div class="col-sm-1">
+						<select>
+							<option />
+							<option>Tous les jours</option>
+							<option selected>Toutes les semaines</option>
+							<option>Tous les mois</option>
+							<option>Tous les ans</option>
+						</select>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2 wd200px">
+						<label class="libelle">Conditions *:</label>
+					</div>
+					<div class="col-sm-1">
+						<textarea rows="5" cols="30">Tous les jeudi soir de 19H à 20H</textarea>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2 wd200px">
+						<label class="libelle">Type de réduction *:</label>
+					</div>
+					<div class="col-sm-1">
+						<select>
+							<option />
+							<option>1 + 1</option>
+							<option selected>2 + 1</option>
+							<option>3 + 1</option>
+							<option>% sur commande</option>
+							<option>% nombre de commande</option>
+						</select>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2 wd200px">
+						<label class="libelle">Valeur de réduction :</label>
+					</div>
+					<div class="col-sm-1">
+						<input type="number"></input>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-5">
+				<div class="row">
+					<img class="img-responsive" alt="" src="../images/promotions/2+1.jpg">
+				</div>
+				<div class="row text-center">
+					<button type="button" class="btn btn-classic">Importer</button>
+				</div>
+			</div>
+		</div>
+		
+		<div class="row" style="margin-top: 50px;">
+			<div class="col-lg-12 text-center">
+				<div class="btn-group">
+					<a href="editionPromotionErreurValidation.html"><button type="button" class="btn btn-success">Modifier promotion</button></a>
+					<a href="listePromotions-Tout.html"><button type="button" class="btn btn-danger">Annuler</button><a>
+				</div>
+			</div>
+		</div>
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Your Website 2014</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
