@@ -80,55 +80,55 @@
 						</thead>
 						<tbody>
 							<tr>
-								<td class="pd10px">
+								<td class="pd10px" draggable="true" ondragstart="drag(event)">
 									<label>Céline</label><br>
 									<label>Chargée de marcketing</label>
 								</td>
 							</tr>
 							<tr>
-								<td class="pd10px">
+								<td class="pd10px" draggable="true" ondragstart="drag(event)">
 									<label>Eliott</label><br>
 									<label>Cuisinier</label>
 								</td>
 							</tr>
 							<tr>
-								<td class="pd10px">
+								<td class="pd10px" draggable="true" ondragstart="drag(event)">
 									<label>Alise</label><br>
 									<label>Cuisinier</label>
 								</td>
 							</tr>
 							<tr>
-								<td class="pd10px">
+								<td class="pd10px" draggable="true" ondragstart="drag(event)">
 									<label>Ines</label><br>
 									<label>Hotesse de caisse<label>
 								</td>
 							</tr>
 							<tr>
-								<td class="pd10px">
+								<td class="pd10px" draggable="true" ondragstart="drag(event)">
 									<label>Tom</label><br>
 									<label>Hote de caisse</label>
 								</td>
 							</tr>
 							<tr>
-								<td class="pd10px">
+								<td class="pd10px" draggable="true" ondragstart="drag(event)">
 									<label>Bob</label><br>
 									<label>Responsable comptabilité</label>
 								</td>
 							</tr>
 							<tr>
-								<td class="pd10px">
+								<td class="pd10px" draggable="true" ondragstart="drag(event)">
 									<label>David</label><br>
 									<label>Gestionnaire de stocks</label>
 								</td>
 							</tr>
 							<tr>
-								<td class="pd10px">
+								<td class="pd10px" draggable="true" ondragstart="drag(event)">
 									<label>Fanny</label><br>
 									<label>Livreuse</label>
 								</td>
 							</tr>
 							<tr>
-								<td class="pd10px">
+								<td class="pd10px" draggable="true" ondragstart="drag(event)">
 									<label>George</label><br>
 									<label>Livreur</label>
 								</td>
@@ -165,6 +165,22 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+	
+	<script>
+		function allowDrop(ev) {
+			ev.preventDefault();
+		}
+
+		function drag(ev) {
+			ev.dataTransfer.setData("text", ev.target.id);
+		}
+
+		function drop(ev) {
+			ev.preventDefault();
+			var data = ev.dataTransfer.getData("text");
+			ev.target.appendChild(document.getElementById(data));
+		}
+	</script>
 
 </body>
 
