@@ -22,20 +22,40 @@ footer {
 	color: green;
 }
 
+.bggreen {
+	background: green;
+}
+
 .blue {
 	color: blue;
+}
+
+.bgblue {
+	background: blue;
 }
 
 .red {
 	color: red;
 }
 
+.bgred {
+	background: red;
+}
+
 .purple {
 	color: purple;
 }
 
+.bgpurple {
+	background: purple;
+}
+
 .grey {
 	color: grey;
+}
+
+.brgrey {
+	background: grey;
 }
 
 .underline {
@@ -85,7 +105,25 @@ label.libelle {
 	width: 100%;
 }
 
+.pd10px {
+	padding: 10px;
+}
+
+.table-fixed thead {
+	width: 100%;
+}
+
+.table-fixed tbody {
+	
+}
+
 /* image */
 .img-responsive {
-	height: 202px;
+	max-height: 202px;
+}
+
+img.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
