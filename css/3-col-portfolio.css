@@ -109,6 +109,10 @@ label.libelle {
 	padding: 10px;
 }
 
+.pdt49pc {
+	padding-top: 49%;
+}
+
 .table-fixed thead {
 	width: 100%;
 }
@@ -124,6 +128,11 @@ label.libelle {
 .table-fixed td, 
 .table-fixed th {
   display: block;
+}
+
+.table-fixed-multi-column tbody td, .table-fixed-multi-column thead > tr> th {
+  float: left;
+  border-bottom-width: 0;
 }
 
 
