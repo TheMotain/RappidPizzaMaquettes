@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>liste des commandes</title>
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../css/3-col-portfolio.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <a class="navbar-brand" href="../RapidePizza.html">RapidePizza</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="#">Liste des commandes</a>
+                </li>
+                <li>
+                    <a href="prise_en_charge.html">Commandes prises en charge</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Fanny</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Déconnection</a></li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+<div class="container">
+    <div class="row page-header">
+        <div class="col-lg-12">
+            <h1>Commandes en cours</h1>
+        </div>
+    </div>
+
+    <table class="table">
+        <th class="text-center">Identifiant commande</th>
+        <th class="text-center">Heure de départ</th>
+        <th class="text-center">Etat de la préparation</th>
+        <th class="text-center">Prise en charge</th>
+        <tr>
+            <td class="text-center">123</td>
+            <td class="text-center">19h35</td>
+            <td class="text-center">Prête</td>
+            <td class="text-center"><a href="prise_en_charge.html" class="btn btn-success btn-block">Prendre en charge</a></td>
+        </tr>
+        <tr>
+            <td class="text-center">142</td>
+            <td class="text-center">19h40</td>
+            <td class="text-center">En préparation</td>
+            <td class="text-center"><button class="btn btn-success btn-block" disabled>Prendre en charge</button></td>
+        </tr>
+        <tr>
+            <td class="text-center">144</td>
+            <td class="text-center">19h43</td>
+            <td class="text-center">En préparation</td>
+            <td class="text-center"><button class="btn btn-success btn-block" disabled>Prendre en charge</button></td>
+        </tr>
+
+    </table>
+</div>
+</body>
+</html>
